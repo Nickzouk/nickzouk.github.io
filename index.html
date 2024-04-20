@@ -28,15 +28,17 @@
                             <p>Level Designer</p>
                         </div>
 
-                    <!-- Nav -->
-                        <nav id="nav">
-                            <ul>
-                                <li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
-                                <li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Projects</span></a></li>
-                                <li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
-                                <li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
-                            </ul>
-                        </nav>
+						<nav id="nav">
+    <ul>
+        <li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
+        <li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Projects</span></a></li>
+        <li><a href="#pdf-viewer-section" id="portfolio-segment-link"><span class="icon solid fa-file-pdf">Portfolio</span></a></li> <!-- Updated link -->
+        <li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
+        <li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
+    </ul>
+</nav>
+
+
 
                 </div>
 
@@ -67,27 +69,15 @@
                                 <!--<p>--</p>-->
                             </header>
 
-                            <footer>
-                                <a href="#portfolio" class="button scrolly">My Projects</a>
-                                <a href="#" id="pdf-view-button" class="button">View Portfolio</a> <!-- Add this line -->
-                            </footer>
+						<footer>
+							<a href="#portfolio" class="button scrolly">My Projects</a>
+							<a href="#pdf-viewer-section" class="button scrolly" id="view-portfolio-button">View Portfolio</a>
+						</footer>
+
 
                         </div>
                     </section>
 
-										<!-- PDF Viewer Section -->
-					<section id="pdf-viewer-section" style="display: none; background-color: rgb(51, 51, 51); padding-top: 10px; padding-bottom: 10px;">
-						<div class="container" style="padding-left: 10px; padding-right: 10px; overflow-y: scroll; scroll-snap-type: y mandatory;">
-							<iframe id="pdf-viewer-iframe" src="images/portfolio.pdf#zoom=130" width="100%" height="800" frameborder="0" style="
-								background-color: rgb(51, 51, 51); /* Dark gray background color */
-								color: rgb(51, 51, 51); /* Dark gray text color */
-								border: 1px solid rgb(51, 51, 51); /* Dark gray border */
-								box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
-								padding: 10px; /* Padding around the content */
-								scroll-snap-align: start;
-							"></iframe>
-						</div>
-					</section>
 
 
 
@@ -176,6 +166,20 @@
 
 						</div>
 					</section>
+
+						<!-- PDF Viewer -->
+<section id="pdf-viewer-section" style="background-color: rgb(51, 51, 51); padding-top: 10px; padding-bottom: 10px;">
+    <div class="container" style="padding-left: 10px; padding-right: 10px; overflow-y: scroll; scroll-snap-type: y mandatory;">
+        <iframe id="pdf-viewer-iframe" src="images/portfolio.pdf#zoom=130" width="100%" height="800" frameborder="0" style="
+            background-color: rgb(51, 51, 51); /* Dark gray background color */
+            color: rgb(51, 51, 51); /* Dark gray text color */
+            border: 1px solid rgb(51, 51, 51); /* Dark gray border */
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+            padding: 10px; /* Padding around the content */
+            scroll-snap-align: start;
+        "></iframe>
+    </div>
+</section>
 
 				<!-- About Me -->
 					<section id="about" class="three">
