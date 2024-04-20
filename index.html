@@ -5,81 +5,92 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Nick J Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+    <head>
+        <title>Nick J Portfolio</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body class="is-preload">
 
-		<!-- Header -->
-			<div id="header">
+        <!-- Header -->
+            <div id="header">
 
-				<div class="top">
+                <div class="top">
 
-					<!-- Logo -->
-						<div id="logo">
-							<span class="image avatar48"><img src="images/Nj.jpg" alt="" /></span>
-							<h1 id="title">Nikolas Joukowski</h1>
-							<p>Level Designer</p>
-						</div>
+                    <!-- Logo -->
+                        <div id="logo">
+                            <span class="image avatar48"><img src="images/Nj.jpg" alt="" /></span>
+                            <h1 id="title">Nikolas Joukowski</h1>
+                            <p>Level Designer</p>
+                        </div>
 
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
-								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
-								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
-							</ul>
-						</nav>
+                    <!-- Nav -->
+                        <nav id="nav">
+                            <ul>
+                                <li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
+                                <li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Projects</span></a></li>
+                                <li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
+                                <li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
+                            </ul>
+                        </nav>
 
-				</div>
+                </div>
 
-				<div class="bottom">
+                <div class="bottom">
 
-					<!-- Social Icons -->
-						<ul class="icons">
-							<li><a href="https://twitter.com/Nick_Jouk" target="_blank" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="https://www.facebook.com/Abtos-Covert-104179314953840" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="https://github.com/Nickzouk" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
-							<li><a href="https://nickzouk.itch.io" target="_blank" class="icon brands fa-itch-io"><span class="label">Itch.io</span></a></li>
-							<li><a href="mailto:Nickzouk2000@gmail.com" target="_blank" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
+                    <!-- Social Icons -->
+                        <ul class="icons">
+                            <li><a href="https://twitter.com/Nick_Jouk" target="_blank" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                            <li><a href="https://www.facebook.com/Abtos-Covert-104179314953840" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                            <li><a href="https://github.com/Nickzouk" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                            <li><a href="https://nickzouk.itch.io" target="_blank" class="icon brands fa-itch-io"><span class="label">Itch.io</span></a></li>
+                            <li><a href="mailto:Nickzouk2000@gmail.com" target="_blank" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                        </ul>
 
-				</div>
+                </div>
 
-			</div>
+            </div>
 
-		<!-- Main -->
-			<div id="main">
+        <!-- Main -->
+            <div id="main">
 
-				<!-- Intro -->
-					<section id="top" class="one dark cover">
-						<div class="container">
+                <!-- Intro -->
+                    <section id="top" class="one dark cover">
+                        <div class="container">
 
-							<header>
-								<h2 class="alt">Hi! I'm <strong>Nikolas Joukowski</strong>, and I am a Level Designer .</h2>
-								<!--<p>--</p>-->
-							</header>
+                            <header>
+                                <h2 class="alt">Hi! I'm <strong>Nikolas Joukowski</strong>, and I am a Level Designer .</h2>
+                                <!--<p>--</p>-->
+                            </header>
 
-							<footer>
-								<a href="#portfolio" class="button scrolly">My portfolio</a>
-							</footer>
+                            <footer>
+                                <a href="#portfolio" class="button scrolly">My Projects</a>
+                                <a href="#" id="pdf-view-button" class="button">View Portfolio</a> <!-- Add this line -->
+                            </footer>
 
-						</div>
-					</section>
+                        </div>
+                    </section>
 
-				<!-- Portfolio -->
-					<section id="portfolio" class="two">
-						<div class="container">
+                <!-- PDF Viewer Section -->
+                <section id="pdf-viewer-section" style="display: none;">
+                    <div class="container">
+                        <header>
+                            <h2>PDF Viewer</h2>
+                        </header>
+                       <iframe id="pdf-viewer-iframe" src="images/portfolio.pdf" width="100%" height="600" frameborder="0"></iframe>
+                    </div>
+                </section>
 
-							<header>
-								<h2>Projects</h2>
-							</header>
+                <!-- Portfolio -->
+                    <section id="portfolio" class="two">
+                        <div class="container">
 
-							<p>These are the projects I've worked on, mostly student and game jam projects with tight deadlines and good results. <br />
+                            <header>
+                                <h2>Projects</h2>
+                            </header>
+
+                            <p>These are the projects I've worked on, mostly student and game jam projects with tight deadlines and good results. <br />
                                 I was responsible for the Level Design , Environment Design, Game Design, and Programming. </p>
 
 							<div class="row">
@@ -207,6 +218,20 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			
+			<!-- Custom JavaScript for PDF viewer -->
+        <script>
+            $(document).ready(function() {
+                // When the "View PDF" button is clicked
+                $('#pdf-view-button').click(function(e) {
+                    e.preventDefault(); // Prevent default link behavior
+                    $('#pdf-viewer-section').toggle(); // Toggle the visibility of the PDF viewer section
+                });
+            });
+        </script>
+
+    </body>
+</html>
 
 	</body>
 </html>
