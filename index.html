@@ -29,13 +29,17 @@
                         </div>
 
 						<nav id="nav">
-    <ul>
-        <li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
-        <li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Projects</span></a></li>
-        <li><a href="#pdf-viewer-section" id="portfolio-segment-link"><span class="icon solid fa-file-pdf">Portfolio</span></a></li> <!-- Updated link -->
-        <li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
-        <li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
-    </ul>
+				   <ul>
+					<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
+					<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Projects</span></a></li>
+					<li><a href="#pdf-viewer-section" id="portfolio-segment-link"><span class="icon solid fa-file-pdf">Portfolio</span></a></li>
+					<li><a href="#cv-viewer-section" id="cv-segment-link"><span class="icon solid fa-file-alt">CV</span></a></li> <!-- Added link for CV section -->
+					<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
+					<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
+				</ul>
+
+
+
 </nav>
 
 
@@ -171,7 +175,7 @@
 						<section id="pdf-viewer-section" style="background-color: rgb(51, 51, 51); padding-top: 10px; padding-bottom: 10px;">
 							<div class="container" style="padding-left: 10px; padding-right: 10px; overflow-y: scroll; scroll-snap-type: y mandatory;">
 								<header>
-									<h2 style="color: white;">My Portfolio</h2>
+									<h2 style="color: white;">Portfolio</h2>
 								</header>
 								<iframe id="pdf-viewer-iframe" src="images/portfolio.pdf#zoom=130" width="100%" height="800" frameborder="0" style="
 									background-color: rgb(51, 51, 51); /* Dark gray background color */
@@ -183,6 +187,25 @@
 								"></iframe>
 							</div>
 						</section>
+						
+											<!-- CV Viewer -->
+					<section id="cv-viewer-section" style="background-color: rgb(51, 51, 51); padding-top: 10px; padding-bottom: 10px;">
+						<div class="container" style="padding-left: 5px; padding-right: 5px; overflow-y: scroll; scroll-snap-type: y mandatory;">
+							<header>
+								<h2 style="color: white;">CV</h2>
+							</header>
+							<iframe id="cv-viewer-iframe" src="images/cv.pdf#zoom=100" width="100%" height="1123" frameborder="0" style="
+								background-color: rgb(51, 51, 51); /* Dark gray background color */
+								color: rgb(51, 51, 51); /* Dark gray text color */
+								border: 1px solid rgb(51, 51, 51); /* Dark gray border */
+								box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+								padding: 10px; /* Padding around the content */
+								scroll-snap-align: start;
+							"></iframe>
+						</div>
+					</section>
+
+
 
 
 				<!-- About Me -->
